@@ -1,3 +1,3 @@
 # spring-chatgpt-communication
 
-yongkwan 꿀꿀
+yonGGwan 꿀꿀
