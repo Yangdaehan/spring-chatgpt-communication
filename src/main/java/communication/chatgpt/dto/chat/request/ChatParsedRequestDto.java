@@ -13,7 +13,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ChatRequestDto {
+public class ChatParsedRequestDto {
 
     @NotNull
     private String model;

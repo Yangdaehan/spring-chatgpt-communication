@@ -1,23 +1,22 @@
-package communication.chatgpt.dto.edits.request;
+package communication.chatgpt.dto.transcription.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.constraints.NotNull;
 
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class EditsParsedRequestDto {
+public class TranscriptionParsedRequestDto {
 
     @NotNull
     private String model;
 
     @NotNull
-    private String input;
-
-    @NotNull
-    private String instruction;
+    private MultipartFile file;
 }

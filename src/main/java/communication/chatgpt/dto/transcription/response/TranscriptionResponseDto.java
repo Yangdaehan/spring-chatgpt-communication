@@ -1,15 +1,15 @@
-package communication.chatgpt.dto.edits.response;
+package communication.chatgpt.dto.transcription.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter @Getter
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class EditChoiceDto {
+public class TranscriptionResponseDto {
 
-    String text;
-    int index;
+    private String text;
 }

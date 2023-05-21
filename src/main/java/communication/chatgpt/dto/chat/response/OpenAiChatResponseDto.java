@@ -1,6 +1,5 @@
-package communication.chatgpt.dto.edits.response;
+package communication.chatgpt.dto.chat.response;
 
-import communication.chatgpt.dto.chat.response.ChatUsageDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,10 +11,12 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class OpenAiEditResponseDto {
+public class OpenAiChatResponseDto {
 
+    private String id;
     private String object;
     private long created;
-    private List<EditChoiceDto> choices;
+    private String model;
     private ChatUsageDto usage;
+    private List<ChatChoiceDto> choices;
 }
